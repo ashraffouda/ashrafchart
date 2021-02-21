@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 image:
   repository: ashraffouda/mattermost
-  tag: 5.29.0
+  tag: latest
   imagePullPolicy: IfNotPresent
 
 initContainerImage:
