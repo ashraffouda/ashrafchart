@@ -132,7 +132,9 @@ mysql:
 extraPodAnnotations: {}
 
 ## Additional env vars
-# extraEnvVars: []
+extraEnvVars:
+  - name: MM_CONFIG
+    value: "/mattermost/data/config.json"
   # This is an example of extra env vars when using with the deployment with GitLab Helm Charts
   # - name: POSTGRES_PASSWORD_GITLAB
   #   valueFrom:
@@ -156,21 +158,7 @@ extraPodAnnotations: {}
 threefoldVdc:
   backup: ''
 ## Additional init containers
-extraInitContainers:
-  - name: copy-config
-    image: "alpine:latest"
-    imagePullPolicy: IfNotPresent
-    volumeMounts:
-    - mountPath: /mattermost/config/config.json
-      name: config-json
-      subPath: config.json
-    - mountPath: /mattermost/data
-      name: mattermost-data
-    command: ["/bin/ash", "-c", "if [ ! -f /mattermost/data/config.json ]; then cp -f /mattermost/config/config.json /mattermost/data/config.json ;fi"]
-extraEnvVars:
-  - name: MM_CONFIG
-    value: "/mattermost/data/config.json"
-# extraInitContainers: []
+extraInitContainers: []
   # This is an example of extra Init Container when using with the deployment with GitLab Helm Charts
   # - name: bootstrap-database
   #   image: "postgres:9.6-alpine"
