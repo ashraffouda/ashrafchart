@@ -71,6 +71,7 @@ spec:
         - mountPath: /mattermost/config/config.json
           name: config-json
           subPath: config.json
+
         - mountPath: /mattermost/data
           name: mattermost-data
         - mountPath: /mattermost/{{ trimPrefix "./" .Values.configJSON.PluginSettings.Directory }}
@@ -90,7 +91,7 @@ spec:
       - name: mattermost-data
       {{ if .Values.persistence.data.enabled }}
         persistentVolumeClaim:
-          claimName: {{ .Values.persistence.data.existingClaim | default (include "mattermost.fullname" .) }}
+          claimName: {{ .Values.persistence.data.existingClaim | default (include "mattermost.fullname" .) }}-data-claim
       {{ else }}
         emptyDir: {}
       {{ end }}

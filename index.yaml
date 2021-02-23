@@ -3,14 +3,14 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-02-23T12:47:27.818788239+02:00"
+    created: "2021-02-23T15:39:44.97474337+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
       repository: https://charts.helm.sh/stable
       version: 1.6.4
     description: Mattermost Team Edition server.
-    digest: 019812c96eab16c42833099c6dd2f62fcfac9704c23d95d6807688d9946444ea
+    digest: 8ecbb00ff0ba1d4dd5598a47aedda4104688a77de50494a58a4fbfd84e68b45b
     home: https://mattermost.com
     icon: http://www.mattermost.org/wp-content/uploads/2016/04/icon.png
     keywords:
@@ -19,6 +19,6 @@ entries:
     - team collaboration
     name: mattermost
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mattermost-3.19.0.tgz
+    - https://ashraffouda.github.io/ashrafchart/mattermost-3.19.0.tgz
     version: 3.19.0
-generated: "2021-02-23T12:47:27.812601188+02:00"
+generated: "2021-02-23T15:39:44.971767661+02:00"
