@@ -166,7 +166,7 @@ extraInitContainers:
       subPath: config.json
     - mountPath: /mattermost/data
       name: mattermost-data
-    command: ["/bin/ash", "-c", "if [ ! -f /mattermost/data/config.json ]; then cp -f /mattermost/config/config.json /mattermost/data/config.json fi"]
+    command: ["/bin/ash", "-c", "if [ ! -f /mattermost/data/config.json ]; then cp -f /mattermost/config/config.json /mattermost/data/config.json ;fi"]
 extraEnvVars:
   - name: MM_CONFIG
     value: "/mattermost/data/config.json"
