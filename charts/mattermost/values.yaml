@@ -338,7 +338,7 @@ configJSON: {
     "FeedbackOrganization": "",
     "SMTPUsername": "",
     "SMTPPassword": "",
-    "EnableSMTPAuth": "",
+    "EnableSMTPAuth": false,
     "SMTPServer": "",
     "SMTPPort": "",
     "ConnectionSecurity": "",
