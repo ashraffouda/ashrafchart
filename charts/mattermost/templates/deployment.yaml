@@ -50,7 +50,7 @@ spec:
           subPath: config.json
         - mountPath: /mattermost/data
           name: mattermost-data
-        command: ["/bin/ash", "-c", "if [ ! -f /mattermost/data/config.json ]; then cp -f /mattermost/config/config.json /mattermost/data/config.json ;fi"]
+        command: ["/bin/ash", "-c", "if [ ! -f /mattermost/data/config.json ]; then cp -fp /mattermost/config/config.json /mattermost/data/config.json && chmod -R 777 /mattermost/data;fi"]
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
