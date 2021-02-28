@@ -3,7 +3,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-02-28T16:19:57.194024408+02:00"
+    created: "2021-02-28T16:35:32.869100076+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -24,7 +24,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-02-28T16:19:57.205092207+02:00"
+    created: "2021-02-28T16:35:32.87959046+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -36,7 +36,7 @@ entries:
       version: 12.0.1
     description: Federated (ActivityPub) video streaming platform using P2P (BitTorrent)
       directly in the web browser with WebTorrent.
-    digest: a79bfc6c9f1272b495cce3bdcda57191c09d107d8ae44ad39f85079279a21b66
+    digest: 11055a77ab67762130d467485bba702b4b176b88ceaae5347e6bb78fa444fdcf
     home: https://joinpeertube.org/
     icon: https://joinpeertube.org/favicon.png
     keywords:
@@ -53,4 +53,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-02-28T16:19:57.190531535+02:00"
+generated: "2021-02-28T16:35:32.863510307+02:00"
