@@ -3,7 +3,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-02-24T18:39:46.474109991+02:00"
+    created: "2021-02-28T16:19:57.194024408+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -21,4 +21,36 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/mattermost-3.19.0.tgz
     version: 3.19.0
-generated: "2021-02-24T18:39:46.470231623+02:00"
+  peertube:
+  - apiVersion: v2
+    appVersion: production-stretch
+    created: "2021-02-28T16:19:57.205092207+02:00"
+    dependencies:
+    - condition: deps.pg.managed
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.0
+    - condition: deps.redis.managed
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.1
+    description: Federated (ActivityPub) video streaming platform using P2P (BitTorrent)
+      directly in the web browser with WebTorrent.
+    digest: a79bfc6c9f1272b495cce3bdcda57191c09d107d8ae44ad39f85079279a21b66
+    home: https://joinpeertube.org/
+    icon: https://joinpeertube.org/favicon.png
+    keywords:
+    - peertube
+    - video
+    - streaming
+    - p2p
+    maintainers:
+    - name: Amit Kumar Gupta (Original owner)
+      url: https://akgupta.ca
+    name: peertube
+    sources:
+    - https://github.com/Chocobozzz/PeerTube
+    urls:
+    - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-02-28T16:19:57.190531535+02:00"
