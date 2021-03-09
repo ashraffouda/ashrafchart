@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-03-04T16:14:36.330641772+02:00"
+    created: "2021-03-09T23:50:19.688993563+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -21,7 +21,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 12.X.X
     description: A Helm chart for deploying Discourse to Kubernetes
-    digest: 3b53442b5e0fe0f89aa34985d4fa480e87ee8eaa73ad333162d77f6702217127
+    digest: ca2f0f1b838ca97b185e1095730d887bb103f7449305ca30ca7939e26345e4b1
     home: https://github.com/bitnami/charts/tree/master/bitnami/discourse
     icon: https://bitnami.com/assets/stacks/discourse/img/discourse-stack-220x234.png
     maintainers:
@@ -42,7 +42,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-03-04T16:14:36.33447276+02:00"
+    created: "2021-03-09T23:50:19.697261735+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -63,7 +63,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-03-04T16:14:36.346839419+02:00"
+    created: "2021-03-09T23:50:19.710655362+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -92,4 +92,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-04T16:14:36.301102609+02:00"
+generated: "2021-03-09T23:50:19.674420123+02:00"
