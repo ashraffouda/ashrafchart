@@ -13,8 +13,8 @@
 ##
 image:
   registry: docker.io
-  repository: bitnami/owncloud
-  tag: 10.6.0-debian-10-r71
+  repository: ashraffouda/owncloud
+  tag: latest
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -276,7 +276,7 @@ service:
 ingress:
   ## Set to true to enable ingress record generation
   ##
-  enabled: false
+  enabled: true
 
   ## Set this to true in order to add the corresponding annotations for cert-manager
   ##

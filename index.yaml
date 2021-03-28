@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-03-17T13:41:07.154926135+02:00"
+    created: "2021-03-28T22:59:59.087922818+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-03-17T13:41:07.127952749+02:00"
+    created: "2021-03-28T22:59:59.061707764+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +83,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-03-17T13:41:07.159834849+02:00"
+    created: "2021-03-28T22:59:59.091696522+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -101,10 +101,87 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/mattermost-3.19.0.tgz
     version: 3.19.0
+  owncloud:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 10.6.0
+    created: "2021-03-28T22:59:59.099322424+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - owncloud-database
+      version: 9.x.x
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: acc6bbc9950df43fffb68899f4344a3d0d4cc7073070a93e4068fab08a593b81
+    home: https://github.com/bitnami/charts/tree/master/bitnami/owncloud
+    icon: https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png
+    keywords:
+    - owncloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: owncloud
+    sources:
+    - https://github.com/bitnami/bitnami-docker-owncloud
+    - https://owncloud.org/
+    urls:
+    - https://ashraffouda.github.io/ashrafchart/owncloud-10.2.4.tgz
+    version: 10.2.4
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 10.6.0
+    created: "2021-03-28T22:59:59.118429963+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - owncloud-database
+      version: 9.x.x
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: dd97a1b40c6d0a2ec39cf1494f2218f4cdb2fc8b828ac212c13169c2ddda2f34
+    home: https://github.com/bitnami/charts/tree/master/bitnami/owncloud
+    icon: https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png
+    keywords:
+    - owncloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: owncloud
+    sources:
+    - https://github.com/bitnami/bitnami-docker-owncloud
+    - https://owncloud.org/
+    urls:
+    - https://ashraffouda.github.io/ashrafchart/charts/owncloud-10.2.4.tgz
+    version: 10.2.4
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-03-17T13:41:07.170767077+02:00"
+    created: "2021-03-28T22:59:59.111312383+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -133,4 +210,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-17T13:41:07.106495037+02:00"
+generated: "2021-03-28T22:59:59.046075797+02:00"
