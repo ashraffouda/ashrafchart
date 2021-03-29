@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-03-29T13:11:05.139287928+02:00"
+    created: "2021-03-29T14:15:25.005688082+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-03-29T13:11:05.112619019+02:00"
+    created: "2021-03-29T14:15:24.983901344+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +83,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-03-29T13:11:05.143229976+02:00"
+    created: "2021-03-29T14:15:25.008494658+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -106,7 +106,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-29T13:11:05.150304705+02:00"
+    created: "2021-03-29T14:15:25.015516485+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -121,7 +121,7 @@ entries:
       version: 9.x.x
     description: A file sharing server that puts the control and security of your
       own data back into your hands.
-    digest: 1c0635c0fb5caf65e3d4b171fd5a15bb931c8eb710e8e98fe6589b2ea5bf95fd
+    digest: 641dcba512f8b2cef121b72881fd01924d93629105afd810763f19f40b8ad6f3
     home: https://github.com/bitnami/charts/tree/master/bitnami/owncloud
     icon: https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png
     keywords:
@@ -144,7 +144,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-29T13:11:05.168590205+02:00"
+    created: "2021-03-29T14:15:25.033736419+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -181,7 +181,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-03-29T13:11:05.160745994+02:00"
+    created: "2021-03-29T14:15:25.024892303+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -210,4 +210,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-29T13:11:05.097104112+02:00"
+generated: "2021-03-29T14:15:24.970218356+02:00"
