@@ -103,7 +103,7 @@ commonAnnotations: {}
 ## Common labels to add to all ownCloud resources (sub-charts are not considered). Evaluated as a template
 ##
 commonLabels: 
-  - app.kubernetes.io/version: 10.6.0
+  app.kubernetes.io/version: 10.6.0
 
 
 ## Update strategy - only really applicable for deployments with RWO PVs attached
