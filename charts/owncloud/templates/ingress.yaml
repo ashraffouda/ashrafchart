@@ -10,6 +10,9 @@ metadata:
     {{- end }}
   {{- if or .Values.ingress.annotations .Values.commonAnnotations .Values.ingress.certManager }}
   annotations:
+    {{- if .Values.global.ingress.certresolver }}
+    traefik.ingress.kubernetes.io/router.tls.certresolver: {{ .Values.global.ingress.certresolver }}
+    {{- end }}
     {{- if .Values.ingress.certManager }}
     kubernetes.io/tls-acme: "true"
     {{- end }}

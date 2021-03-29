@@ -8,6 +8,9 @@
 #     - myRegistryKeySecretName
 #   storageClass: myStorageClass
 
+global:
+  ingress:
+    certresolver: default
 ## Bitnami ownCloud image version
 ## ref: https://hub.docker.com/r/bitnami/owncloud/tags/
 ##
@@ -99,7 +102,9 @@ commonAnnotations: {}
 
 ## Common labels to add to all ownCloud resources (sub-charts are not considered). Evaluated as a template
 ##
-commonLabels: {}
+commonLabels: 
+  - app.kubernetes.io/version: 10.6.0
+
 
 ## Update strategy - only really applicable for deployments with RWO PVs attached
 ## If replicas = 1, an update can get "stuck", as the previous pod remains attached to the
@@ -458,14 +463,14 @@ volumePermissions:
     ## resources, such as Minikube. If you do want to specify resources, uncomment the following
     ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
     ##
-    limits: {}
-    ##   cpu: 100m
-    ##   memory: 128Mi
-    ##
-    requests: {}
-    ##   cpu: 100m
-    ##   memory: 128Mi
-    ##
+    limits: 
+      cpu: 1000m
+      memory: 1024Mi
+    
+    requests: 
+      cpu: 100m
+      memory: 128Mi
+    
 
 ## Configure Pods Security Context
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod
