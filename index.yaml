@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-03-29T11:58:01.794350783+02:00"
+    created: "2021-03-29T12:56:28.394563975+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -40,13 +40,13 @@ entries:
     - https://github.com/spinnaker
     - https://www.discourse.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/discourse-2.3.2.tgz
+    - https://ashraffouda.github.io/ashrafchart/discourse-2.3.2.tgz
     version: 2.3.2
   - annotations:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-03-29T11:58:01.767579647+02:00"
+    created: "2021-03-29T12:56:28.367576548+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,12 +78,12 @@ entries:
     - https://github.com/spinnaker
     - https://www.discourse.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/discourse-2.0.3.tgz
+    - https://ashraffouda.github.io/ashrafchart/discourse-2.0.3.tgz
     version: 2.0.3
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-03-29T11:58:01.797983483+02:00"
+    created: "2021-03-29T12:56:28.398009649+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -99,14 +99,14 @@ entries:
     - team collaboration
     name: mattermost
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mattermost-3.19.0.tgz
+    - https://ashraffouda.github.io/ashrafchart/mattermost-3.19.0.tgz
     version: 3.19.0
   owncloud:
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-29T11:58:01.805456529+02:00"
+    created: "2021-03-29T12:56:28.406031315+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -121,7 +121,7 @@ entries:
       version: 9.x.x
     description: A file sharing server that puts the control and security of your
       own data back into your hands.
-    digest: dde0b7c51459544aaf2504e8ea72c173ce3e3473f7b9d17fe3df5ec7a9297f58
+    digest: 41679d2230cd9f3ec82bc459d8324bcb9cd0fef877a518555ff2a07b465d132b
     home: https://github.com/bitnami/charts/tree/master/bitnami/owncloud
     icon: https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png
     keywords:
@@ -138,13 +138,13 @@ entries:
     - https://github.com/bitnami/bitnami-docker-owncloud
     - https://owncloud.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/owncloud-10.2.4.tgz
+    - https://ashraffouda.github.io/ashrafchart/owncloud-10.2.4.tgz
     version: 10.2.4
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-29T11:58:01.822021842+02:00"
+    created: "2021-03-29T12:56:28.42279106+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -176,12 +176,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-owncloud
     - https://owncloud.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/charts/owncloud-10.2.4.tgz
+    - https://ashraffouda.github.io/ashrafchart/charts/owncloud-10.2.4.tgz
     version: 10.2.4
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-03-29T11:58:01.815376929+02:00"
+    created: "2021-03-29T12:56:28.414899197+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -208,6 +208,6 @@ entries:
     sources:
     - https://github.com/Chocobozzz/PeerTube
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/peertube-0.0.1.tgz
+    - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-29T11:58:01.751778198+02:00"
+generated: "2021-03-29T12:56:28.353791795+02:00"
