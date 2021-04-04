@@ -75,7 +75,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /
-              port: {{ .Values "services" "taiga-back" "port" }}
+              port: {{ index .Values "services" "taiga-back" "port" }}
             timeoutSeconds: 2
             periodSeconds: 20
             failureThreshold: 10
