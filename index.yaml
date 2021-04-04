@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-03-30T15:49:00.371097531+02:00"
+    created: "2021-04-04T15:32:05.984799303+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-03-30T15:49:00.346253893+02:00"
+    created: "2021-04-04T15:32:05.960392178+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +83,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-03-30T15:49:00.375084984+02:00"
+    created: "2021-04-04T15:32:05.989089913+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -106,7 +106,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-30T15:49:00.382273536+02:00"
+    created: "2021-04-04T15:32:05.995496527+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -144,7 +144,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-30T15:49:00.3980143+02:00"
+    created: "2021-04-04T15:32:06.013091176+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -181,7 +181,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-03-30T15:49:00.391238952+02:00"
+    created: "2021-04-04T15:32:06.006163668+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -210,4 +210,16 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-30T15:49:00.327492062+02:00"
+  taiga:
+  - apiVersion: v1
+    appVersion: 6.0.6
+    created: "2021-04-04T15:32:06.007126634+02:00"
+    description: A Taiga Helm Chart generated for docker-compose from Skippbox Kompose
+    digest: c5a3c950af0a502a09e5f206a837b0f3986ef6cbda91dcc99c48c1545df3a8ab
+    keywords:
+    - taiga
+    name: taiga
+    urls:
+    - https://ashraffouda.github.io/ashrafchart/taiga-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-04-04T15:32:05.941177485+02:00"
