@@ -18,7 +18,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-db" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
 
     spec:
       containers:
@@ -69,7 +69,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-back" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
     spec:
       containers:
         - name: taiga-back
@@ -156,7 +156,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: taiga-async
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
 
     spec:
       containers:
@@ -224,7 +224,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-async-rabbitmq" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
 
     spec:
       containers:
@@ -263,7 +263,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-front" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
     spec:
       containers:
         - name: taiga-front
@@ -302,7 +302,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-events" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
 
     spec:
       containers:
@@ -339,7 +339,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-events-rabbitmq" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
     spec:
       containers:
         - name: taiga-events-rabbitmq
@@ -377,7 +377,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-protected" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
 
     spec:
       containers:
@@ -421,7 +421,7 @@ spec:
       labels:
         io.kompose.network/taiga: "true"
         io.kompose.service: {{ index .Values "services" "taiga-gateway" "name" }}
-        {{- include "taiga.labels" . | nindent 4 }}
+        {{- include "taiga.labels" . | nindent 8 }}
     spec:
       containers:
         - name: taiga-gateway
