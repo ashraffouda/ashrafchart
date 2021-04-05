@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-04-05T16:34:15.565831021+02:00"
+    created: "2021-04-05T17:16:34.466332119+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-04-05T16:34:15.542156315+02:00"
+    created: "2021-04-05T17:16:34.41737929+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -80,10 +80,26 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/discourse-2.0.3.tgz
     version: 2.0.3
+  mastodon:
+  - apiVersion: v2
+    appVersion: 3.3.0
+    created: "2021-04-05T17:16:34.468376401+02:00"
+    description: A Helm chart for Mastodon
+    digest: 5d6897d4318ed1288a068d1d1c12d28947f146b01cb0a380dfc3120ebfd0da5e
+    maintainers:
+    - email: tim.walls@snowgoons.com
+      name: timwalls
+    name: mastodon
+    sources:
+    - https://github.com/timwalls/mastodon-chart
+    - https://github.com/tootsuite/mastodon
+    urls:
+    - https://ashraffouda.github.io/ashrafchart/mastodon-3.3.0.tgz
+    version: 3.3.0
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-04-05T16:34:15.569455119+02:00"
+    created: "2021-04-05T17:16:34.473058322+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -106,7 +122,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-05T16:34:15.576965336+02:00"
+    created: "2021-04-05T17:16:34.481438901+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -144,7 +160,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-05T16:34:15.593930561+02:00"
+    created: "2021-04-05T17:16:34.512473789+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -181,7 +197,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-04-05T16:34:15.58597058+02:00"
+    created: "2021-04-05T17:16:34.49786813+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -213,7 +229,7 @@ entries:
   taiga:
   - apiVersion: v1
     appVersion: 6.0.6
-    created: "2021-04-05T16:34:15.586858153+02:00"
+    created: "2021-04-05T17:16:34.499522424+02:00"
     description: A Taiga Helm Chart generated for docker-compose from Skippbox Kompose
     digest: a17b6444376714f033fbdffacecc2520b74ffe8330ba658237fd449411f7820e
     keywords:
@@ -222,4 +238,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/taiga-0.0.1.tgz
     version: 0.0.1
-generated: "2021-04-05T16:34:15.525236887+02:00"
+generated: "2021-04-05T17:16:34.367083845+02:00"
