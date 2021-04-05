@@ -75,9 +75,9 @@ spec:
           # readinessProbe:
           #   tcpSocket:
           #     port: {{ index .Values.services "taiga-back" "targetPort" }}
-            timeoutSeconds: 2
-            periodSeconds: 20
-            failureThreshold: 10
+            # timeoutSeconds: 2
+            # periodSeconds: 20
+            # failureThreshold: 10
           ports:
           - name: liveness-port
             containerPort: {{ index .Values.services "taiga-back" "targetPort" }}
