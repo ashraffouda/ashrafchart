@@ -72,29 +72,28 @@ spec:
         - name: taiga-back
           image: "{{ .Values.images.backend.repository }}:{{ .Values.images.backend.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.images.backend.pullPolicy }}
-          readinessProbe:
-            tcpSocket:
-              port: {{ index .Values.services "taiga-back" "targetPort" }}
+          # readinessProbe:
+          #   tcpSocket:
+          #     port: {{ index .Values.services "taiga-back" "targetPort" }}
             timeoutSeconds: 2
             periodSeconds: 20
             failureThreshold: 10
-          # ports:
-          # - name: liveness-port
-          #   containerPort: {{ index .Values.services "taiga-back" "targetPort" }}
-          #   hostPort: {{ index .Values.services "taiga-back" "port" }}
+          ports:
+          - name: liveness-port
+            containerPort: {{ index .Values.services "taiga-back" "targetPort" }}
+            hostPort: {{ index .Values.services "taiga-back" "port" }}
           
-          # livenessProbe:
-          #   tcpSocket:
-          #     path: /
-          #     port: liveness-port
-          #   failureThreshold: 1
-          #   periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: liveness-port
+            failureThreshold: 1
+            periodSeconds: 10
           
-          # startupProbe:
-          #   tcpSocket:
-          #     port: liveness-port
-          #   failureThreshold: 30
-          #   periodSeconds: 10
+          startupProbe:
+            tcpSocket:
+              port: liveness-port
+            failureThreshold: 30
+            periodSeconds: 10
           env:
             - name: ENABLE_TELEMETRY
               value: "{{ .Values.telemetry.enabled }}"
