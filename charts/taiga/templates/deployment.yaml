@@ -81,13 +81,7 @@ spec:
             # timeoutSeconds: 2
             # periodSeconds: 20
             # failureThreshold: 10
-          resources:
-            limits:
-              cpu: 1000m
-              memory: 1024Mi
-            requests:
-              cpu: "{{ div .Values.resources.cpu 10 }}m"
-              memory: "{{ div .Values.resources.memory 10 }}Mi"
+          
           ports:
           - name: liveness-port
             containerPort: {{ index .Values.services "taiga-back" "targetPort" }}
