@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-04-06T14:59:39.581937722+02:00"
+    created: "2021-04-06T15:11:06.646886733+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-04-06T14:59:39.557655534+02:00"
+    created: "2021-04-06T15:11:06.618641861+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,9 +83,9 @@ entries:
   mastodon:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2021-04-06T14:59:39.583176141+02:00"
+    created: "2021-04-06T15:11:06.647974995+02:00"
     description: A Helm chart for Mastodon
-    digest: 0e56ad65030260645e15d7540ba6e48da9cdebeb1155e168b87b98284c98e9e0
+    digest: 9b7ab67731834c532c74aef887b091e0afaf5d805d6f84665f3c88f609513da7
     maintainers:
     - email: tim.walls@snowgoons.com
       name: timwalls
@@ -99,7 +99,7 @@ entries:
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-04-06T14:59:39.586117091+02:00"
+    created: "2021-04-06T15:11:06.651145454+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -122,7 +122,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-06T14:59:39.592791075+02:00"
+    created: "2021-04-06T15:11:06.658966968+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -160,7 +160,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-06T14:59:39.610389423+02:00"
+    created: "2021-04-06T15:11:06.676581135+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -197,7 +197,7 @@ entries:
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-04-06T14:59:39.603324209+02:00"
+    created: "2021-04-06T15:11:06.668750769+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -229,7 +229,7 @@ entries:
   taiga:
   - apiVersion: v1
     appVersion: 6.0.6
-    created: "2021-04-06T14:59:39.604238727+02:00"
+    created: "2021-04-06T15:11:06.669513605+02:00"
     description: A Taiga Helm Chart generated for docker-compose from Skippbox Kompose
     digest: 9135e3fdb136344a3414a4f33fe7056fbb6ba3fbb7a1bfb363c2de988d78774e
     keywords:
@@ -238,4 +238,4 @@ entries:
     urls:
     - https://threefoldtech.github.io/vdc-solutions-charts/taiga-0.0.1.tgz
     version: 0.0.1
-generated: "2021-04-06T14:59:39.544126667+02:00"
+generated: "2021-04-06T15:11:06.605266424+02:00"
