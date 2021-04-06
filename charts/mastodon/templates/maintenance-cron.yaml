@@ -1,7 +1,6 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-metadata:
   name: {{ template "name" . }}-maintenance
   labels:
     app: {{ template "name" . }}
