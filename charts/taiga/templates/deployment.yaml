@@ -84,8 +84,8 @@ spec:
           livenessProbe:
             tcpSocket:
               port: liveness-port
-            failureThreshold: 1
-            periodSeconds: 10
+            failureThreshold: 3
+            periodSeconds: 30
           
           startupProbe:
             tcpSocket:
