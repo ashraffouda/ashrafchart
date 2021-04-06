@@ -5,7 +5,7 @@ entries:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-04-06T15:11:06.646886733+02:00"
+    created: "2021-04-06T15:43:41.450247003+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -40,13 +40,13 @@ entries:
     - https://github.com/spinnaker
     - https://www.discourse.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/discourse-2.3.2.tgz
+    - https://ashraffouda.github.io/ashrafchart/discourse-2.3.2.tgz
     version: 2.3.2
   - annotations:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2021-04-06T15:11:06.618641861+02:00"
+    created: "2021-04-06T15:43:41.42735331+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,14 +78,14 @@ entries:
     - https://github.com/spinnaker
     - https://www.discourse.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/discourse-2.0.3.tgz
+    - https://ashraffouda.github.io/ashrafchart/discourse-2.0.3.tgz
     version: 2.0.3
   mastodon:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2021-04-06T15:11:06.647974995+02:00"
+    created: "2021-04-06T15:43:41.451486133+02:00"
     description: A Helm chart for Mastodon
-    digest: 9b7ab67731834c532c74aef887b091e0afaf5d805d6f84665f3c88f609513da7
+    digest: 3d8a8244f319451d5837f44c07cc636b8a6928aacf8477a483114bbf8b6788d5
     maintainers:
     - email: tim.walls@snowgoons.com
       name: timwalls
@@ -94,12 +94,12 @@ entries:
     - https://github.com/timwalls/mastodon-chart
     - https://github.com/tootsuite/mastodon
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mastodon-3.3.0.tgz
+    - https://ashraffouda.github.io/ashrafchart/mastodon-3.3.0.tgz
     version: 3.3.0
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-04-06T15:11:06.651145454+02:00"
+    created: "2021-04-06T15:43:41.454202043+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -115,14 +115,14 @@ entries:
     - team collaboration
     name: mattermost
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mattermost-3.19.0.tgz
+    - https://ashraffouda.github.io/ashrafchart/mattermost-3.19.0.tgz
     version: 3.19.0
   owncloud:
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-06T15:11:06.658966968+02:00"
+    created: "2021-04-06T15:43:41.460411986+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -154,13 +154,13 @@ entries:
     - https://github.com/bitnami/bitnami-docker-owncloud
     - https://owncloud.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/owncloud-10.2.4.tgz
+    - https://ashraffouda.github.io/ashrafchart/owncloud-10.2.4.tgz
     version: 10.2.4
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-06T15:11:06.676581135+02:00"
+    created: "2021-04-06T15:43:41.475514838+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -192,12 +192,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-owncloud
     - https://owncloud.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/charts/owncloud-10.2.4.tgz
+    - https://ashraffouda.github.io/ashrafchart/charts/owncloud-10.2.4.tgz
     version: 10.2.4
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-04-06T15:11:06.668750769+02:00"
+    created: "2021-04-06T15:43:41.468412261+02:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -224,18 +224,18 @@ entries:
     sources:
     - https://github.com/Chocobozzz/PeerTube
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/peertube-0.0.1.tgz
+    - https://ashraffouda.github.io/ashrafchart/peertube-0.0.1.tgz
     version: 0.0.1
   taiga:
   - apiVersion: v1
     appVersion: 6.0.6
-    created: "2021-04-06T15:11:06.669513605+02:00"
+    created: "2021-04-06T15:43:41.46917601+02:00"
     description: A Taiga Helm Chart generated for docker-compose from Skippbox Kompose
     digest: 9135e3fdb136344a3414a4f33fe7056fbb6ba3fbb7a1bfb363c2de988d78774e
     keywords:
     - taiga
     name: taiga
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/taiga-0.0.1.tgz
+    - https://ashraffouda.github.io/ashrafchart/taiga-0.0.1.tgz
     version: 0.0.1
-generated: "2021-04-06T15:11:06.605266424+02:00"
+generated: "2021-04-06T15:43:41.412276196+02:00"
