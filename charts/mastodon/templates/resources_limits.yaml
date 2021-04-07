@@ -7,11 +7,11 @@ metadata:
 spec:
   limits:
   - max:
-      cpu: "{{ div  (sub .Values.resources.cpu 1000)   8 }}m"
-      memory: "{{ div (sub .Values.resources.memory 1024) 8 }}Mi"
-    # defaultRequest:
-    #   cpu: "{{ div .Values.resources.cpu 10 }}m"
-    #   memory: "{{ div .Values.resources.memory 10 }}Mi"
+      cpu: "{{ div  (sub .Values.resources.cpu 1000)   6 }}m"
+      memory: "{{ div (sub .Values.resources.memory 1024) 6 }}Mi"
+    defaultRequest:
+      cpu: "{{ div .Values.resources.cpu 10 }}m"
+      memory: "{{ div .Values.resources.memory 10 }}Mi"
     type: Container
 
 # PODS RESOURCES:

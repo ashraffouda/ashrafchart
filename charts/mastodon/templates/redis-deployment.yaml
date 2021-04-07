@@ -36,8 +36,8 @@ spec:
             - ping
           initialDelaySeconds: 30
           timeoutSeconds: 5
-        resources:
-{{ toYaml .Values.redis.resources | indent 10 }}
+#         resources:
+# {{ toYaml .Values.redis.resources | indent 10 }}
         volumeMounts:
         - name: redis-data
           mountPath: /bitnami/redisg
