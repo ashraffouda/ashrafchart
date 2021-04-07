@@ -59,6 +59,9 @@ web:
       size: 8Gi
       hostPath: "/web-assets"
   resources:
+    limits:
+      memory: 1024Mi
+      cpu: 1000m
     requests:
       memory: 256Mi
       cpu: 100m
