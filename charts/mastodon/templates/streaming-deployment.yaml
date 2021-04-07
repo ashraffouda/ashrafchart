@@ -35,5 +35,4 @@ spec:
         ports:
         - name: streaming
           containerPort: {{ .Values.streaming.containerPort }}
-#         resources:
-# {{ toYaml .Values.streaming.resources | indent 10 }}
+
