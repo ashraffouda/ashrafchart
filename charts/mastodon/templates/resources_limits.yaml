@@ -10,8 +10,8 @@ spec:
       cpu: "{{ div  (sub .Values.resources.limits.cpu 1000)   6 }}m"
       memory: "{{ div (sub .Values.resources.limits.memory 1024) 6 }}Mi"
     defaultRequest:
-      cpu: "{{ div  (sub .Values.resources.limits.cpu 1000)  8 }}m"
-      memory: "{{ div (sub .Values.resources.limits.memory 1024) 8 }}Mi"
+      cpu: "265m"
+      memory: "100Mi"
     type: Container
 
 # PODS RESOURCES:
