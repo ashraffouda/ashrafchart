@@ -7,8 +7,8 @@ metadata:
 spec:
   limits:
   - max:
-      cpu: "{{ div .Values.resources.cpu  5 }}m"
-      memory: "{{ div .Values.resources.memory 5 }}Mi"
+      cpu: "{{ div  (sub .Values.resources.cpu 1000)   5 }}m"
+      memory: "{{ div (sub .Values.resources.memory 1024) 5 }}Mi"
     # defaultRequest:
     #   cpu: "{{ div .Values.resources.cpu 10 }}m"
     #   memory: "{{ div .Values.resources.memory 10 }}Mi"
