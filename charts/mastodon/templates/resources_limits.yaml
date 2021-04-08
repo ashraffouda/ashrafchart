@@ -6,7 +6,7 @@ metadata:
     backupType: {{ .Values.threefoldVdc.backup | quote }}
 spec:
   limits:
-  - max:
+  - default:
       cpu: "{{ div  (sub .Values.resources.limits.cpu 1000)   6 }}m"
       memory: "{{ div (sub .Values.resources.limits.memory 1024) 6 }}Mi"
     defaultRequest:

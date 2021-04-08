@@ -25,6 +25,9 @@ env:
   # hostname: "192.168.1.123:9000"
   # cloudfrontHost: "dummy"
   # streamingApiBaseUrl: "dummy"
+  extraEnvVars:
+    - name: THREEBOT_KEY
+      value: ""
 
 httpd:
   name: assets
@@ -161,3 +164,4 @@ resources:
   limits:
     cpu: 2000
     memory: 2048
+

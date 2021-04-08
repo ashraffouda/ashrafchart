@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-03-22T11:43:38.200256082+02:00"
+    created: "2021-04-08T10:55:50.697157714+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -39,4 +39,4 @@ entries:
     urls:
     - https://ashraffouda.github.io/ashrafchart/owncloud-10.2.4.tgz
     version: 10.2.4
-generated: "2021-03-22T11:43:38.190259598+02:00"
+generated: "2021-04-08T10:55:50.687810379+02:00"
