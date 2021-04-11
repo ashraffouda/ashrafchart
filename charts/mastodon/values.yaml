@@ -64,13 +64,6 @@ web:
       accessMode: ReadWriteOnce
       size: 8Gi
       hostPath: "/web-assets"
-  resources:
-    limits:
-      memory: "{{ div .Values.resources.limits.memory 3 }}Mi"
-      cpu: "{{ div .Values.resources.limits.cpu  3 }}m"
-    requests:
-      memory: 256Mi
-      cpu: 100m
 streaming:
   name: streaming
   image: tootsuite/mastodon
