@@ -43,7 +43,6 @@ spec:
         - name: web
           containerPort: {{ .Values.web.containerPort }}
         resources:
-{{ toYaml .Values.web.resources | indent 10 }}
           limits: 
             memory: "{{ div .Values.resources.limits.memory 3 }}Mi"
             cpu: "{{ div .Values.resources.limits.cpu  3 }}m"
